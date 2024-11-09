@@ -1,0 +1,27 @@
+{
+	"kind": "collectionType",
+	"collectionName": "answer_options",
+	"info": {
+		"singularName": "answer-option",
+		"pluralName": "answer-options",
+		"displayName": "Answer Option",
+		"description": ""
+	},
+	"options": {
+		"draftAndPublish": true
+	},
+	"pluginOptions": {},
+	"attributes": {
+		"answer_content": {
+			"type": "blocks"
+		},
+		"question": {
+			"type": "relation",
+			"relation": "oneToOne",
+			"target": "api::question.question"
+		},
+		"is_correct": {
+			"type": "boolean"
+		}
+	}
+}
